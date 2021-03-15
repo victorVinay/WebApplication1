@@ -1,0 +1,17 @@
+﻿<h1 class="display-4">Enter Your 4 Digit Guess In Below</h1>
+
+<div class="text-center">
+    <form method="post" asp-action="Index" asp-controller="Game">
+        
+        <input type="text" minlength="4" maxlength="4" placeholder="Enter a 4 digit number only" name="guess" />
+        
+        <input type="submit" />
+
+    </form>
+
+    @{
+        var data = ViewBag.Message;
+    }
+    <h4 class="text-center">@data</h4>
+
+</div>
